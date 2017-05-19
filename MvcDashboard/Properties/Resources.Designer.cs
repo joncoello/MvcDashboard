@@ -61,23 +61,34 @@ namespace MvcDashboard.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;script&gt;
-        ///        var ctx = document.getElementById(&quot;myChart&quot;);
-        ///        var myChart = new Chart(ctx, {
-        ///            type: &apos;bar&apos;,
-        ///            data: {
-        ///                labels: [&quot;Red&quot;, &quot;Blue&quot;, &quot;Yellow&quot;, &quot;Green&quot;, &quot;Purple&quot;, &quot;Orange&quot;],
-        ///                datasets: [{
-        ///                    label: &apos;# of Votes&apos;,
-        ///                    data: [12, 19, 3, 5, 2, 3],
-        ///                    backgroundColor: [
-        ///                        &apos;rgba(255, 99, 132, 0.2)&apos;,
-        ///                        &apos;rgba(54, 162, 235, 0.2)&apos;,
-        ///               [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to &lt;canvas id=&quot;myChart&quot;&gt;&lt;/canvas&gt;.
         /// </summary>
-        internal static string chartscript {
+        internal static string chart1html {
             get {
-                return ResourceManager.GetString("chartscript", resourceCulture);
+                return ResourceManager.GetString("chart1html", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 
+        ///var ctx = document.getElementById(&quot;myChart&quot;);
+        ///var myChart = new Chart(ctx, {
+        ///    type: &apos;bar&apos;,
+        ///    data: {
+        ///        labels: [&quot;Red&quot;, &quot;Blue&quot;, &quot;Yellow&quot;, &quot;Green&quot;, &quot;Purple&quot;, &quot;Orange&quot;],
+        ///        datasets: [{
+        ///            label: &apos;# of Votes&apos;,
+        ///            data: [12, 19, 3, 5, 2, 3],
+        ///            backgroundColor: [
+        ///                &apos;rgba(255, 99, 132, 0.2)&apos;,
+        ///                &apos;rgba(54, 162, 235, 0.2)&apos;,
+        ///                &apos;rgba(255, 206, 86, 0.2)&apos;,
+        ///                &apos;rgba(75, 192, 192, 0.2)&apos;,
+        ///                &apos;rgba( [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string chart1js {
+            get {
+                return ResourceManager.GetString("chart1js", resourceCulture);
             }
         }
     }

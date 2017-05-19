@@ -14,8 +14,8 @@ namespace MvcDashboard.Controllers
                 PageTitle = "Hello MVC"
             };
             model.Widgets.Add(new Models.HomeWidget {
-                Template = "<canvas id=\"myChart\"></canvas>",
-                Script = MvcDashboard.Properties.Resources.chartscript
+                Template = MvcDashboard.Properties.Resources.chart1html,
+                Script = MvcDashboard.Properties.Resources.chart1js
             });
             model.Widgets.Add(new Models.HomeWidget {
                 Template= "<div><h1>booooo</h1></div>"

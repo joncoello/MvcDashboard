@@ -28,7 +28,7 @@
                     @Html.Raw(widget.Template)
                 </div>
             </div>
-            
+
         }
 
     </div>
@@ -58,7 +58,9 @@
     <!-- plugins -->
     @foreach (var widget in Model.Widgets)
     {
-        @Html.Raw(widget.Script)
+        <script>
+            @Html.Raw(widget.Script)
+        </script>
     }
 
 }
