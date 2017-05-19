@@ -9,12 +9,19 @@ namespace MvcDashboard.Models
     {
         public string PageTitle { get; set; }
 
-        public List<string> ControlTemplates { get; set; }
+        public List<HomeWidget> Widgets { get; set; }
 
         public HomeModel()
         {
-            ControlTemplates = new List<string>();
+            Widgets = new List<HomeWidget>();
         }
 
     }
+
+    public class HomeWidget {
+
+        public string Template { get; set; }
+
+    }
+
 }

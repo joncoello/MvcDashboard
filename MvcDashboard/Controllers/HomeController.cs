@@ -13,8 +13,12 @@ namespace MvcDashboard.Controllers
             var model = new Models.HomeModel{
                 PageTitle = "Hello MVC"
             };
-            model.ControlTemplates.Add("<canvas id=\"myChart\"></canvas>");
-            model.ControlTemplates.Add("<div><h1>booooo</h1></div>");
+            model.Widgets.Add(new Models.HomeWidget {
+                Template = "<canvas id=\"myChart\"></canvas>"
+            });
+            model.Widgets.Add(new Models.HomeWidget {
+                Template= "<div><h1>booooo</h1></div>"
+            });
             return View(model);
         }
 

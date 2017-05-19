@@ -21,13 +21,13 @@
 
         @{int i = 0;}
 
-        @foreach (var template in Model.ControlTemplates)
+        @foreach (var widget in Model.Widgets)
         {
             <div class="grid-stack-item"
                  data-gs-x="0" data-gs-y="0"
                  data-gs-width="3" data-gs-height="3">
                 <div class="grid-stack-item-content">
-                    @Html.Raw(template)
+                    @Html.Raw(widget.Template)
                 </div>
             </div>
 
