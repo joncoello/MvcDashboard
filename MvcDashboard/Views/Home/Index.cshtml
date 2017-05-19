@@ -17,6 +17,7 @@
         @Model.PageTitle
     </h1>
 
+    <!-- widgets -->
     <div class="grid-stack">
 
         @{
@@ -25,13 +26,13 @@
 
         @foreach (var widget in Model.Widgets)
         {
-            <div class="grid-stack-item"
-                 data-gs-x="@Html.Raw(i*3)" data-gs-y="0"
-                 data-gs-width="3" data-gs-height="2">
-                <div class="grid-stack-item-content">
-                    @Html.Raw(widget.Template)
-                </div>
+        <div class="grid-stack-item"
+             data-gs-x="@Html.Raw(i*3)" data-gs-y="0"
+             data-gs-width="3" data-gs-height="2">
+            <div class="grid-stack-item-content">
+                @Html.Raw(widget.Template)
             </div>
+        </div>
 
             i++;
 
@@ -43,12 +44,18 @@
 
 @section scripts{
 
-    <!-- libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js" integrity="sha256-8E6QUcFg1KTnpEU8TFGhpTGHw5fJqB9vCms3OhAYLqw=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.3.0/gridstack.all.js" integrity="sha256-Xh4PEJtirUtWhg4l4INWf8VGes+xjE7hY/0epwBF8X4=" crossorigin="anonymous"></script>
+    <!-- grid stack -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.3.0/gridstack.all.js"></script>
+    
+    <!-- libraries-->
+    @foreach (var scriptReference in Model.Widgets.SelectMany(w => w.ScriptReferences).Distinct())
+    {
+        @Html.Raw("    " + scriptReference)
+    }
+
 
     <!-- grid stack -->
     <script type="text/javascript">
@@ -61,7 +68,7 @@
         });
     </script>
 
-    <!-- plugins -->
+    <!-- widget scripts -->
     @foreach (var widget in Model.Widgets)
     {
         <script>

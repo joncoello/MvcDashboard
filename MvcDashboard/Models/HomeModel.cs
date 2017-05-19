@@ -42,9 +42,12 @@ namespace MvcDashboard.Models
             }
         }
 
+        public List<string> ScriptReferences { get; set; }
+
         public HomeWidget()
         {
             ID = Guid.NewGuid();
+            ScriptReferences = new List<string>();
         }
 
         private string ReplaceThisWithID(string text) {
