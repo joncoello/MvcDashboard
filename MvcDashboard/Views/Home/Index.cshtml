@@ -3,9 +3,27 @@
     ViewBag.Title = "Home Page";
 }
 
+@section styles{
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+    </style>
+    }
+
 <div>
     <h1>
         @Model.PageTitle
     </h1>
-    blah blah
+    
+    <button onclick="clickButton()">click me</button>
+
 </div>
+
+@section scripts{
+    <script>
+        function clickButton() {
+            alert('boo');
+        }
+    </script>
+    }
