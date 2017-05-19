@@ -10,7 +10,10 @@ namespace MvcDashboard.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var model = new Models.HomeModel{
+                PageTitle = "Hello MVC"
+            };
+            return View(model);
         }
 
         public ActionResult About()
