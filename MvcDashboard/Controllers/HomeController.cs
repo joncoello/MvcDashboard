@@ -11,9 +11,14 @@ namespace MvcDashboard.Controllers
         public ActionResult Index()
         {
             var model = new Models.HomeModel{
-                PageTitle = "Hello MVC"
+                PageTitle = "Dashboard"
             };
             model.Widgets.Add(new Models.HomeWidget {
+                Template = MvcDashboard.Properties.Resources.chart1html,
+                Script = MvcDashboard.Properties.Resources.chart1js
+            });
+            model.Widgets.Add(new Models.HomeWidget
+            {
                 Template = MvcDashboard.Properties.Resources.chart1html,
                 Script = MvcDashboard.Properties.Resources.chart1js
             });

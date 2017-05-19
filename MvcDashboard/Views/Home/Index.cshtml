@@ -19,15 +19,21 @@
 
     <div class="grid-stack">
 
+        @{
+            int i = 0;
+        }
+
         @foreach (var widget in Model.Widgets)
         {
             <div class="grid-stack-item"
-                 data-gs-x="0" data-gs-y="0"
-                 data-gs-width="3" data-gs-height="3">
+                 data-gs-x="@Html.Raw(i*3)" data-gs-y="0"
+                 data-gs-width="3" data-gs-height="2">
                 <div class="grid-stack-item-content">
                     @Html.Raw(widget.Template)
                 </div>
             </div>
+
+            i++;
 
         }
 
