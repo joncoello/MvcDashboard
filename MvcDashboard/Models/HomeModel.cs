@@ -21,7 +21,8 @@ namespace MvcDashboard.Models
     public class HomeWidget {
 
         public string Template { get; set; }
-
+        public string Script { get; set; }
+        
     }
 
 }
