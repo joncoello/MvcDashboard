@@ -5,18 +5,23 @@
 
 @section styles{
     <style>
-        body{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
     </style>
-    }
+}
 
 <div>
     <h1>
         @Model.PageTitle
     </h1>
-    
+
     <button onclick="clickButton()">click me</button>
+
+    @foreach (var template in Model.ControlTemplates)
+    {
+        @Html.Raw(template)
+    }
 
 </div>
 
@@ -26,4 +31,4 @@
             alert('boo');
         }
     </script>
-    }
+}

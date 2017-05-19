@@ -13,6 +13,8 @@ namespace MvcDashboard.Controllers
             var model = new Models.HomeModel{
                 PageTitle = "Hello MVC"
             };
+            model.ControlTemplates.Add("<div>Control 1</div>");
+            model.ControlTemplates.Add("<div>Control 2</div>");
             return View(model);
         }
 
