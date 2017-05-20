@@ -23,7 +23,9 @@ namespace MvcDashboard.Controllers
                 {
                     Template = GetBody(widget.GetHtml()),
                     Script = widget.GetScript(),
-                    ScriptReferences = widget.GetScriptReferences()
+                    ScriptReferences = widget.GetScriptReferences(),
+                    Style = widget.GetStyle(),
+                    StyleReferences = widget.GetStyleReferences()
                 });
             }
 

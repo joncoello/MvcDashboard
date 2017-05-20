@@ -5,11 +5,17 @@
 
 @section styles{
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.3.0/gridstack.css" integrity="sha256-62TVvQ65tYq9mhgBoBcHn7Ix4HA8d2+wUBEtYH/BtIY=" crossorigin="anonymous" />
-    <style>
-        body {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-    </style>
+    @foreach (var styleReference in Model.Widgets.SelectMany(w => w.StyleReferences).Distinct())
+    {
+        @Html.Raw("    " + styleReference)
+    }
+    <!-- widget scripts -->
+    @foreach (var widget in Model.Widgets)
+    {
+        <style>
+            @Html.Raw(widget.Style)
+        </style>
+    }
 }
 
 <div>
@@ -49,7 +55,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.3.0/gridstack.all.js"></script>
-    
+
     <!-- libraries-->
     @foreach (var scriptReference in Model.Widgets.SelectMany(w => w.ScriptReferences).Distinct())
     {

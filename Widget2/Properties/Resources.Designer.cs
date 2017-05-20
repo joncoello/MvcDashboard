@@ -65,25 +65,48 @@ namespace Widget2.Properties {
         ///&lt;html&gt;
         ///&lt;head&gt;
         ///    &lt;title&gt;&lt;/title&gt;
-        ///	&lt;meta charset=&quot;utf-8&quot; /&gt;
+        ///    &lt;meta charset=&quot;utf-8&quot; /&gt;
+        ///    &lt;link href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+        ///    &lt;link href=&quot;https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+        ///    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css&quot; /&gt;
+        ///    &lt;link href=&quot;site.css&quot; rel=&quot;stylesheet&quot; /&gt;
         ///&lt;/head&gt;
         ///&lt;body&gt;
         ///
-        ///    &lt;div style=&quot;width: 500px; height: 500px;&quot;&gt;
-        ///
-        ///        &lt;!--bodystart--&gt;
-        ///        &lt;h1&gt;booooo&lt;/h1&gt;
-        ///        &lt;!--bodyend--&gt;
-        ///
-        ///    &lt;/div&gt;
-        ///
-        ///&lt;/body&gt;
-        ///&lt;/html&gt;
-        ///.
+        ///    [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string index {
             get {
                 return ResourceManager.GetString("index", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to $(&apos;#calendar&apos;).datepicker();.
+        /// </summary>
+        internal static string script {
+            get {
+                return ResourceManager.GetString("script", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .bg-green-gradient {
+        ///    background: #00a65a !important;
+        ///    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #00a65a), color-stop(1, #00ca6d)) !important;
+        ///    background: -ms-linear-gradient(bottom, #00a65a, #00ca6d) !important;
+        ///    background: -moz-linear-gradient(center bottom, #00a65a 0, #00ca6d 100%) !important;
+        ///    background: -o-linear-gradient(#00ca6d, #00a65a) !important;
+        ///    color: #fff;
+        ///}
+        ///.box {
+        ///    position: relative;
+        ///    border-radius: 3px;
+        ///    background: #f [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string style {
+            get {
+                return ResourceManager.GetString("style", resourceCulture);
             }
         }
     }

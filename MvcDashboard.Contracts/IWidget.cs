@@ -10,7 +10,9 @@ namespace MvcDashboard.Contracts
     {
         string GetHtml();
         string GetScript();
+        string GetStyle();
         List<string> GetScriptReferences();
+        List<string> GetStyleReferences();
 
     }
 }

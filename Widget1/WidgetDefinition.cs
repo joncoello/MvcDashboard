@@ -23,5 +23,15 @@ namespace Widget1
             refs.Add("<script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js\"></script>");
             return refs;
         }
+
+        public string GetStyle()
+        {
+            return "";
+        }
+
+        public List<string> GetStyleReferences()
+        {
+            return new List<string>();
+        }
     }
 }
