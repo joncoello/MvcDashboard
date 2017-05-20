@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 
@@ -25,7 +26,9 @@ namespace MvcDashboard.Controllers
             {
                 model.Widgets.Add(new Models.HomeWidget
                 {
-                    Template = widget.GetHtml()
+                    Template = GetBody(widget.GetHtml()),
+                    Script = widget.GetScript(),
+                    ScriptReferences = widget.GetScriptReferences()
                 });
             }
 
@@ -56,6 +59,18 @@ namespace MvcDashboard.Controllers
             widget.ScriptReferences.Add("<script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js\"></script>");
 
             return widget;
+        }
+
+        private string GetBody(string html)
+        {
+            
+            //var pattern = "#<!--body-->(.*?)<!--/body-->#";
+            var pattern = "<!--bodystart-->(.*?)<!--bodyend-->";
+            var regex = new Regex(pattern, RegexOptions.Singleline);
+            var match = regex.Match(html);
+            var value = match.Value;
+
+            return value;
         }
 
     }

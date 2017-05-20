@@ -82,5 +82,27 @@ namespace Widget1.Properties {
                 return ResourceManager.GetString("index", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (function () {
+        ///    var ctx = document.getElementById(&quot;this&quot;);
+        ///    var myChart = new Chart(ctx, {
+        ///        type: &apos;bar&apos;,
+        ///        data: {
+        ///            labels: [&quot;Red&quot;, &quot;Blue&quot;, &quot;Yellow&quot;, &quot;Green&quot;, &quot;Purple&quot;, &quot;Orange&quot;],
+        ///            datasets: [{
+        ///                label: &apos;# of Votes&apos;,
+        ///                data: [12, 19, 3, 5, 2, 3],
+        ///                backgroundColor: [
+        ///                    &apos;rgba(255, 99, 132, 0.2)&apos;,
+        ///                    &apos;rgba(54, 162, 235, 0.2)&apos;,
+        ///                    &apos;rgba(255, 206, 86, 0.2)&apos;,
+        ///        [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string script {
+            get {
+                return ResourceManager.GetString("script", resourceCulture);
+            }
+        }
     }
 }
