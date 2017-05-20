@@ -19,6 +19,16 @@ namespace MvcDashboard.Controllers
             model.Widgets.Add(new Models.HomeWidget {
                 Template= "<div><h1>booooo</h1></div>"
             });
+
+            var widgets = MefBootstrapper.GetInstances<MvcDashboard.Contracts.IWidget>();
+            foreach (var widget in widgets)
+            {
+                model.Widgets.Add(new Models.HomeWidget
+                {
+                    Template = widget.GetHtml()
+                });
+            }
+
             return View(model);
         }
 
