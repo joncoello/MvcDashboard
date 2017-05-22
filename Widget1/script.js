@@ -1,5 +1,5 @@
 ﻿(function () {
-    var ctx = document.getElementById("this");
+    var ctx = $('#this');
     var myChart = new Chart(ctx, {
         type: 'bar',
         data: {

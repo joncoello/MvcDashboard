@@ -56,7 +56,7 @@ namespace MvcDashboard.Models
         }
 
         private string ReplaceThisWithID(string text) {
-            return text.Replace("\"this\"", "\"" + ID.ToString() + "\"");
+            return text.Replace("this", ID.ToString());
         }
 
     }
