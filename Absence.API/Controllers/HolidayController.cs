@@ -37,8 +37,12 @@ namespace Absence.API.Controllers
             var absenceRepository = new Repositories.AbsenceRepository();
 
             var model = await absenceRepository.List();
-            
-            return Ok(model);
+
+            var dates = model.SelectMany(a => Enumerable.Range(0, 1 + a.EndDate.Subtract(a.StartDate).Days)
+                  .Select(offset => a.StartDate.AddDays(offset).ToString("yyyy-MM-dd"))
+                  .ToArray());
+
+            return Ok(dates);
 
         }
     }
