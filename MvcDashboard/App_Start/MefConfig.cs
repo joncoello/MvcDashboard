@@ -18,7 +18,7 @@ namespace MvcDashboard
         private static IEnumerable<Assembly> Fetch()
         {
             var assemblyPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "bin");
-            var assemblies = new DirectoryInfo(assemblyPath).GetFiles("Widget*.dll").Select(x => Assembly.LoadFile(x.FullName)).ToList();
+            var assemblies = new DirectoryInfo(assemblyPath).GetFiles("*Widget*.dll").Select(x => Assembly.LoadFile(x.FullName)).ToList();
             return assemblies;
         }
     }

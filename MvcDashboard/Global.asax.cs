@@ -17,6 +17,10 @@ namespace MvcDashboard
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             MefConfig.Register();
+
+            // dynamicallyy build routing
+            // pro - method - wrap auth, logging . etc
+            // con all traffic goes here so scalabilityt?
             
         }
     }
