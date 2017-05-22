@@ -120,6 +120,7 @@
     <Compile Include="Models\Absence.cs" />
     <Compile Include="Models\HolidayRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AbsenceRepository.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup />
