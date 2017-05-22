@@ -31,14 +31,23 @@
         // first day of month
         var startDate = new Date(year + '-' + (i + 1) + '-1');
 
-        var startDay = startDate.getDay() == 0 ? 7 : startDate.getDay() + 1;
+        var startDay = startDate.getDay() == 0 ? 7 : startDate.getDay();
 
         for (var d = 0; d < (startDay - 1) ; d++) {
             $('#myAbsence > table > thead > tr').last().append('<td class="nonday">');
         }
 
         for (var d = 0; d < new Date(year, (i + 1), 0).getDate(); d++) {
-            $('#myAbsence > table > thead > tr').last().append('<td>' + (d + 1));
+
+            var dow = new Date(year + '-' + (i + 1) + '-' + (d + 1)).getDay();
+
+            var td = '<td>';
+            if (dow === 0 || dow === 6) {
+                td = '<td class="weekend">';
+            }
+
+            $('#myAbsence > table > thead > tr').last().append(td + (d + 1));
+
         }
 
         var remaining = 42 - (new Date(year, (i + 1), 0).getDate()) - (startDay - 1);
