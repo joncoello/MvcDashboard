@@ -20,7 +20,6 @@ namespace Widget2
         public List<string> GetScriptReferences()
         {
             var refs = new List<string>();
-            //refs.Add("<script src=\"https://code.jquery.com/jquery-3.2.1.min.js\"></script>");
             refs.Add("<script src=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js\"></script>");
             refs.Add("<script src=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-progressbar/0.9.0/bootstrap-progressbar.min.js\"></script>");
             return refs;

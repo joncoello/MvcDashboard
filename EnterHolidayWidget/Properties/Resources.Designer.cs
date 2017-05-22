@@ -66,24 +66,33 @@ namespace EnterHolidayWidget.Properties {
         ///&lt;head&gt;
         ///    &lt;title&gt;&lt;/title&gt;
         ///	&lt;meta charset=&quot;utf-8&quot; /&gt;
-        ///&lt;/head&gt;
-        ///&lt;body&gt;
         ///
-        ///    &lt;div style=&quot;width: 500px; height: 500px;&quot;&gt;
+        ///    &lt;!-- Include Required Prerequisites --&gt;
+        ///    &lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.jsdelivr.net/jquery/1/jquery.min.js&quot;&gt;&lt;/script&gt;
+        ///    &lt;script type=&quot;text/javascript&quot; src=&quot;//cdn.jsdelivr.net/momentjs/latest/moment.min.js&quot;&gt;&lt;/script&gt;
+        ///    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css&quot; /&gt;
         ///
-        ///        &lt;!--bodystart--&gt;
-        ///        &lt;h1&gt;Enter Holiday&lt;/h1&gt;
-        ///        &lt;!--bodyend--&gt;
-        ///
-        ///    &lt;/div&gt;
-        ///
-        ///&lt;/body&gt;
-        ///&lt;/html&gt;
-        ///.
+        ///    &lt;!-- Include Date Range Picker --&gt;
+        ///    &lt;script type=&quot;text/javascript&quot; src=&quot;//cd [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string index {
             get {
                 return ResourceManager.GetString("index", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to (function () {
+        ///    $(&apos;input[name=&quot;daterange&quot;]&apos;).daterangepicker({
+        ///        locale: {
+        ///            format: &apos;DD/MM/YYYY&apos;
+        ///        }
+        ///    });
+        ///})();.
+        /// </summary>
+        internal static string script {
+            get {
+                return ResourceManager.GetString("script", resourceCulture);
             }
         }
     }

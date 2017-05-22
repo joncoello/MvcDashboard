@@ -14,12 +14,14 @@ namespace EnterHolidayWidget
 
         public string GetScript()
         {
-            return "";
+            return EnterHolidayWidget.Properties.Resources.script;
         }
 
         public List<string> GetScriptReferences()
         {
             var refs = new List<string>();
+            refs.Add("<script type=\"text/javascript\" src=\"//cdn.jsdelivr.net/momentjs/latest/moment.min.js\"></script>");
+            refs.Add("<script type=\"text/javascript\" src=\"//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js\"></script>");
             return refs;
         }
 
@@ -30,7 +32,10 @@ namespace EnterHolidayWidget
 
         public List<string> GetStyleReferences()
         {
-            return new List<string>();
+            var styles = new List<string>();
+            styles.Add("<link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" rel=\"stylesheet\" />");
+            styles.Add("<link href=\"//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css\" rel=\"stylesheet\" />");
+            return styles;
         }
     }
 }
