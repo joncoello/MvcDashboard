@@ -29,5 +29,17 @@ namespace Absence.API.Controllers
 
             return Ok();
         }
+
+        [Route("")]
+        public async Task<IHttpActionResult> Get()
+        {
+            
+            var absenceRepository = new Repositories.AbsenceRepository();
+
+            var model = await absenceRepository.List();
+            
+            return Ok(model);
+
+        }
     }
 }

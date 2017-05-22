@@ -1,5 +1,10 @@
 ﻿(function () {
 
+    $.get('http://localhost:1187/api/holiday', function (data) {
+        console.log(data);
+    });
+    
+
     var year = 2017;
 
     var days = [
