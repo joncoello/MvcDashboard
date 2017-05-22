@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{e44e021c-7eef-4247-956c-58a5602792e7}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -68,5 +68,6 @@
     <Build Include="Absence\Tables\AbsenceRequest.sql" />
     <Build Include="Absence\Stored Procedures\AbsenceRequest_Create.sql" />
     <Build Include="Security\Absence.sql" />
+    <Build Include="Absence\Stored Procedures\AbsenceRequest_List.sql" />
   </ItemGroup>
 </Project>
