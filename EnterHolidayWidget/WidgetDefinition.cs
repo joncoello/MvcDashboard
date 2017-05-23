@@ -15,9 +15,10 @@ namespace EnterHolidayWidget
 
         public WidgetLayout Getlayout()
         {
-            return new WidgetLayout() {
+            return new WidgetLayout()
+            {
                 X = 0,
-                Y= 5,
+                Y = 5,
                 Widh = 3,
                 Height = 2
             };

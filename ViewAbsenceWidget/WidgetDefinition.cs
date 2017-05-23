@@ -20,7 +20,7 @@ namespace ViewAbsenceWidget
                 X = 0,
                 Y = 0,
                 Widh = 9,
-                Height = 4
+                Height = 3
             };
         }
 

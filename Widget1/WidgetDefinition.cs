@@ -16,10 +16,10 @@ namespace Widget1
         public WidgetLayout Getlayout()
         {
             return new WidgetLayout() {
-                X = 7,
-                Y = 7,
-                Widh = 3,
-                Height = 2
+                X = 4,
+                Y = 5,
+                Widh = 4,
+                Height = 5
             };
         }
 
