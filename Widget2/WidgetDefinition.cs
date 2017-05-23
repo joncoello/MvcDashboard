@@ -19,7 +19,7 @@ namespace Widget2
                 X = 9,
                 Y = 5,
                 Widh = 2,
-                Height = 3
+                Height = 5
             };
         }
 
