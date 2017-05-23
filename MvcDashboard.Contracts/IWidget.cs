@@ -14,5 +14,7 @@ namespace MvcDashboard.Contracts
         List<string> GetScriptReferences();
         List<string> GetStyleReferences();
 
+        WidgetLayout Getlayout();
+
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using MvcDashboard.Contracts;
 
 namespace Widget1
 {
@@ -10,6 +11,16 @@ namespace Widget1
         public string GetHtml()
         {
             return Widget1.Properties.Resources.index;
+        }
+
+        public WidgetLayout Getlayout()
+        {
+            return new WidgetLayout() {
+                X = 7,
+                Y = 7,
+                Widh = 3,
+                Height = 2
+            };
         }
 
         public string GetScript()

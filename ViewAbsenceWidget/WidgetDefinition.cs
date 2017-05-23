@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using MvcDashboard.Contracts;
 
 namespace ViewAbsenceWidget
 {
@@ -10,6 +11,17 @@ namespace ViewAbsenceWidget
         public string GetHtml()
         {
             return ViewAbsenceWidget.Properties.Resources.index;
+        }
+
+        public WidgetLayout Getlayout()
+        {
+            return new WidgetLayout()
+            {
+                X = 0,
+                Y = 0,
+                Widh = 9,
+                Height = 4
+            };
         }
 
         public string GetScript()

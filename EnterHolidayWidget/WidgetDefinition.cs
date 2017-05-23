@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using MvcDashboard.Contracts;
 
 namespace EnterHolidayWidget
 {
@@ -10,6 +11,16 @@ namespace EnterHolidayWidget
         public string GetHtml()
         {
             return EnterHolidayWidget.Properties.Resources.index;
+        }
+
+        public WidgetLayout Getlayout()
+        {
+            return new WidgetLayout() {
+                X = 0,
+                Y= 5,
+                Widh = 3,
+                Height = 2
+            };
         }
 
         public string GetScript()
