@@ -99,4 +99,8 @@
         getData();
     });
 
+    $('#myAbsence > table > thead > tr > th').first().click(function () {
+        getData();
+    });
+
 })();

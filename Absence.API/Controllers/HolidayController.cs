@@ -19,7 +19,8 @@ namespace Absence.API.Controllers
 
             var parts = holidayRequest.DateRange.Split(new[] { " - " }, StringSplitOptions.RemoveEmptyEntries);
 
-            var absence = new Models.Absence() {
+            var absence = new Models.Absence()
+            {
                 StartDate = DateTime.Parse(parts[0]),
                 EndDate = DateTime.Parse(parts[1])
             };
@@ -33,16 +34,21 @@ namespace Absence.API.Controllers
         [Route("")]
         public async Task<IHttpActionResult> Get()
         {
-            
+
             var absenceRepository = new Repositories.AbsenceRepository();
 
             var model = await absenceRepository.List();
 
             var dates = model.SelectMany(a => Enumerable.Range(0, 1 + a.EndDate.Subtract(a.StartDate).Days)
-                  .Select(offset => a.StartDate.AddDays(offset).ToString("yyyy-MM-dd"))
-                  .ToArray());
+                  .Select(offset => a.StartDate.AddDays(offset)).ToArray()).ToList();
 
-            return Ok(dates);
+            var distinct = dates.Distinct();
+
+            var sorted = distinct.OrderBy(d=>d).ToList();
+
+            var sortedStr = sorted.Select(d => d.ToString("yyyy-MM-dd")).ToList();
+
+            return Ok(sortedStr);
 
         }
     }
