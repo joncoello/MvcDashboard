@@ -26,7 +26,7 @@ namespace ViewAbsenceWidget
 
         public string GetScript()
         {
-            return ViewAbsenceWidget.Properties.Resources.script;
+            return "";
         }
 
         public List<string> GetScriptReferences()

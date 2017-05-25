@@ -5,24 +5,25 @@
     <meta charset="utf-8" />
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    
+    <link href="style.css" rel="stylesheet" />
+
 </head>
 <body>
 
-
-    <div style="width: 400px;">
+    <div style="width: 600px;">
 
         <!--bodystart-->
-        <div id="myAbsence">
-
-        </div>
-        <button id="absenceRefresh">refresh</button>
+        <div id="myAbsence1" class="holiday-widget"></div>
+        <div id="myAbsence2" class="holiday-widget"></div>
         <!--bodyend-->
 
     </div>
 
+    <button id="refreshHolidayButton">refresh</button>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="script.js"></script>
+    <script src="/scripts/widget-component.js"></script> <!-- from access npm -->
+    <script src="/scripts/main.js"></script> <!-- widget developer -->
 
 </body>
 </html>

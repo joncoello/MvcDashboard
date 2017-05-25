@@ -1,8 +1,10 @@
-﻿#myAbsence{
+﻿.holiday-widget {
     font-size: 0.7em;
 }
 
-.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+.holiday-widget > .table > tbody > tr > td, .table > tbody > tr > th,
+.holiday-widget > .table > tfoot > tr > td, .table > tfoot > tr > th, 
+.holiday-widget > .table > thead > tr > td, .table > thead > tr > th {
     padding: 2px;
     text-align: center;
 }
@@ -14,6 +16,11 @@
 .nonday {
     background-color: lightgray;
 }
-.holiday{
+
+.holiday {
     background-color: paleturquoise;
+}
+
+.daycol {
+    min-width: 20px;
 }

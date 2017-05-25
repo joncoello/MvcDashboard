@@ -68,25 +68,22 @@ namespace ViewAbsenceWidget.Properties {
         ///    &lt;meta charset=&quot;utf-8&quot; /&gt;
         ///
         ///    &lt;link href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
-        ///    
+        ///    &lt;link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; /&gt;
+        ///
         ///&lt;/head&gt;
         ///&lt;body&gt;
         ///
+        ///    &lt;div style=&quot;width: 600px;&quot;&gt;
         ///
-        ///    &lt;div style=&quot;width: 400px;&quot;&gt;
-        ///
-        ///        &lt;div id=&quot;myAbsence&quot;&gt;
-        ///
-        ///        &lt;/div&gt;
+        ///        &lt;!--bodystart--&gt;
+        ///        &lt;div id=&quot;myAbsence1&quot;&gt;&lt;/div&gt;
+        ///        &lt;div id=&quot;myAbsence2&quot;&gt;&lt;/div&gt;
+        ///        &lt;!--bodyend--&gt;
         ///
         ///    &lt;/div&gt;
         ///
         ///    &lt;script src=&quot;https://code.jquery.com/jquery-3.2.1.min.js&quot;&gt;&lt;/script&gt;
-        ///    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
-        ///
-        ///&lt;/body&gt;
-        ///&lt;/html&gt;
-        ///.
+        ///  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string index {
             get {
@@ -95,34 +92,12 @@ namespace ViewAbsenceWidget.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to (function () {
+        ///   Looks up a localized string similar to #myAbsence{
+        ///    font-size: 0.7em;
+        ///}
         ///
-        ///    var year = 2017;
-        ///
-        ///    var days = [
-        ///        &apos;Mon&apos;, &apos;Tue&apos;, &apos;Wed&apos;, &apos;Thu&apos;, &apos;Fri&apos;, &apos;Sat&apos;, &apos;Sun&apos;
-        ///    ];
-        ///
-        ///    var months = [
-        ///        &apos;January&apos;, &apos;February&apos;, &apos;March&apos;, &apos;April&apos;, &apos;May&apos;, &apos;June&apos;, &apos;July&apos;, &apos;August&apos;, &apos;September&apos;, &apos;October&apos;, &apos;November&apos;, &apos;December&apos;
-        ///    ];
-        ///
-        ///    $(&apos;#myAbsence&apos;).append(&apos;&lt;table&gt;&apos;);
-        ///    $(&apos;#myAbsence &gt; table&apos;).addClass(&apos;table table-bordered&apos;);
-        ///    $(&apos;#myAbsence &gt; table&apos;).append(&apos;&lt;thead&gt;&apos;);
-        ///
-        ///    $(&apos;#myAbsence &gt; table &gt; thead&apos;).append(&apos;&lt;tr&gt;&apos;);
-        ///    $(&apos;#myAbsence &gt; [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string script {
-            get {
-                return ResourceManager.GetString("script", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to .table &gt; tbody &gt; tr &gt; td, .table &gt; tbody &gt; tr &gt; th, .table &gt; tfoot &gt; tr &gt; td, .table &gt; tfoot &gt; tr &gt; th, .table &gt; thead &gt; tr &gt; td, .table &gt; thead &gt; tr &gt; th {
-        ///    padding: 4px;
+        ///.table &gt; tbody &gt; tr &gt; td, .table &gt; tbody &gt; tr &gt; th, .table &gt; tfoot &gt; tr &gt; td, .table &gt; tfoot &gt; tr &gt; th, .table &gt; thead &gt; tr &gt; td, .table &gt; thead &gt; tr &gt; th {
+        ///    padding: 2px;
         ///    text-align: center;
         ///}
         ///
@@ -133,7 +108,12 @@ namespace ViewAbsenceWidget.Properties {
         ///.nonday {
         ///    background-color: lightgray;
         ///}
-        ///.
+        ///.holiday{
+        ///    background-color: paleturquoise;
+        ///}
+        ///.daycol{
+        ///    min-width: 20px;
+        ///}.
         /// </summary>
         internal static string style {
             get {
