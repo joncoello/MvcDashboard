@@ -242,3 +242,4 @@ ModelManifest.xml
 .fake/
 *.map
 /ViewAbsenceWidget/scripts/widget-component.js
+/MvcDashboard/Scripts/main.js
