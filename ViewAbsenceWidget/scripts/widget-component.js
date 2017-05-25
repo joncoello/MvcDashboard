@@ -15,9 +15,9 @@ var WidgetManager = (function () {
     function WidgetManager() {
         this._widgets = new Array();
     }
-    Object.defineProperty(WidgetManager.prototype, "Instance", {
+    Object.defineProperty(WidgetManager, "Instance", {
         get: function () {
-            return this._instance || (this._instance = new WidgetManager());
+            return this._instance || (this._instance = new this());
         },
         enumerable: true,
         configurable: true
