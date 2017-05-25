@@ -25,7 +25,7 @@ namespace Widget1
 
         public string GetScript()
         {
-            return Widget1.Properties.Resources.script;
+            return Widget1.Properties.Resources.main;
         }
 
         public List<string> GetScriptReferences()
@@ -47,7 +47,7 @@ namespace Widget1
 
         public bool HasAuthority()
         {
-            return false;
+            return true;
         }
     }
 }
