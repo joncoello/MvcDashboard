@@ -49,5 +49,10 @@ namespace Widget2
             styles.Add("<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css\" />");
             return styles;
         }
+
+        public bool HasAuthority()
+        {
+            return true;
+        }
     }
 }

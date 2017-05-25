@@ -1,12 +1,5 @@
-﻿let widgetElement1: Element = document.getElementById('myAbsence1');
+﻿let widgetElement1: Element = document.getElementById('this');
 let widget1: WidgetComponenet = new WidgetComponenet(widgetElement1,
-    {
-        loadData: getHolidayData
-    }
-);
-
-let widgetElement2: Element = document.getElementById('myAbsence2');
-let widget2: WidgetComponenet = new WidgetComponenet(widgetElement2,
     {
         loadData: getHolidayData
     }
@@ -108,8 +101,3 @@ function getHolidayData(e: Element) : void {
 }
 
 WidgetManager.Instance.registerWidget(widget1);
-WidgetManager.Instance.registerWidget(widget2);
-
-$('#refreshHolidayButton').click(function () {
-    WidgetManager.Instance.RefreshWidgets();
-});

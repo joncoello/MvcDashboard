@@ -1,11 +1,5 @@
-// widget 1
-var widgetElement1 = document.getElementById('myAbsence1');
+var widgetElement1 = document.getElementById('this');
 var widget1 = new WidgetComponenet(widgetElement1, {
-    loadData: getHolidayData
-});
-// widget 2
-var widgetElement2 = document.getElementById('myAbsence2');
-var widget2 = new WidgetComponenet(widgetElement2, {
     loadData: getHolidayData
 });
 function getHolidayData(e) {
@@ -78,7 +72,3 @@ function getHolidayData(e) {
     });
 }
 WidgetManager.Instance.registerWidget(widget1);
-WidgetManager.Instance.registerWidget(widget2);
-$('#refreshHolidayButton').click(function () {
-    WidgetManager.Instance.RefreshWidgets();
-});

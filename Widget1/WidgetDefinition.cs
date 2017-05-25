@@ -44,5 +44,10 @@ namespace Widget1
         {
             return new List<string>();
         }
+
+        public bool HasAuthority()
+        {
+            return false;
+        }
     }
 }

@@ -19,7 +19,19 @@ namespace MvcDashboard.Controllers
             var widgets = MefBootstrapper.GetInstances<MvcDashboard.Contracts.IWidget>();
             foreach (var widget in widgets)
             {
-                model.Widgets.Add(new Models.HomeWidget
+                model.Widgets.Add(CreateWidget(widget));
+            }
+
+            return View(model);
+        }
+
+        private HomeWidget CreateWidget(Contracts.IWidget widget)
+        {
+
+            if (widget.HasAuthority())
+            {
+
+                return new Models.HomeWidget
                 {
                     Template = GetBody(widget.GetHtml()),
                     Script = widget.GetScript(),
@@ -27,12 +39,16 @@ namespace MvcDashboard.Controllers
                     Style = widget.GetStyle(),
                     StyleReferences = widget.GetStyleReferences(),
                     Layout = widget.Getlayout()
-                });
+                };
+
+            }
+            else
+            {
+                return Models.HomeWidget.NotAuthorisedWidget;
             }
 
-            return View(model);
         }
-
+        
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

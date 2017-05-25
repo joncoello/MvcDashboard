@@ -26,7 +26,7 @@ namespace ViewAbsenceWidget
 
         public string GetScript()
         {
-            return "";
+            return ViewAbsenceWidget.Properties.Resources.main;
         }
 
         public List<string> GetScriptReferences()
@@ -43,6 +43,11 @@ namespace ViewAbsenceWidget
         public List<string> GetStyleReferences()
         {
             return new List<string>();
+        }
+
+        public bool HasAuthority()
+        {
+            return true;
         }
     }
 }

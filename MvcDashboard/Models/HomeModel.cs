@@ -19,26 +19,33 @@ namespace MvcDashboard.Models
 
     }
 
-    public class HomeWidget {
+    public class HomeWidget
+    {
 
         public Guid ID { get; set; }
 
         private string _template;
-        public string Template {
-            get {
+        public string Template
+        {
+            get
+            {
                 return _template;
             }
-            set {
+            set
+            {
                 _template = ReplaceThisWithID(value);
             }
         }
 
         private string _script;
-        public string Script {
-            get {
+        public string Script
+        {
+            get
+            {
                 return _script;
             }
-            set {
+            set
+            {
                 _script = ReplaceThisWithID(value);
             }
         }
@@ -49,7 +56,27 @@ namespace MvcDashboard.Models
 
         public List<string> StyleReferences { get; set; }
 
-        public WidgetLayout Layout{ get; set; }
+        public WidgetLayout Layout { get; set; }
+
+        private static HomeWidget _notAuthorisedWidget;
+        public static HomeWidget NotAuthorisedWidget
+        {
+            get
+            {
+                if (_notAuthorisedWidget == null)
+                {
+                    _notAuthorisedWidget = new HomeWidget()
+                    {
+                        Template = "<h1>not authoised</h1>",
+                        Layout = new WidgetLayout() {
+                            Widh = 2,
+                            Height = 2
+                        }
+                    };
+                }
+                return _notAuthorisedWidget;
+            }
+        }
 
         public HomeWidget()
         {
@@ -58,7 +85,8 @@ namespace MvcDashboard.Models
             StyleReferences = new List<string>();
         }
 
-        private string ReplaceThisWithID(string text) {
+        private string ReplaceThisWithID(string text)
+        {
             return text.Replace("this", ID.ToString());
         }
 

@@ -15,6 +15,8 @@ namespace MvcDashboard.Contracts
         List<string> GetStyleReferences();
 
         WidgetLayout Getlayout();
+        bool HasAuthority();
+        //bool HasAuthority(SecurityManager securityManager);
 
     }
 }
