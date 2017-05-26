@@ -58,4 +58,3 @@ var widget: WidgetComponenet = new WidgetComponenet(widgetElement, {
 });
 
 WidgetManager.Instance.registerWidget(widget);
-

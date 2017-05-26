@@ -72,7 +72,7 @@ namespace Widget1.Properties {
         ///    &lt;div style=&quot;width: 500px; height: 500px;&quot;&gt;
         ///
         ///        &lt;!--bodystart--&gt;
-        ///        &lt;div id=&quot;this&quot;&gt;
+        ///        &lt;div id=&quot;this&quot; class=&quot;bar-chart-widget&quot;&gt;
         ///            &lt;h3&gt;title&lt;/h3&gt;
         ///            &lt;canvas&gt;&lt;/canvas&gt;
         ///        &lt;/div&gt;
@@ -81,8 +81,7 @@ namespace Widget1.Properties {
         ///    &lt;/div&gt;
         ///
         ///    &lt;script src=&quot;node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
-        ///    &lt;!--&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js&quot;&gt;&lt;/script&gt;--&gt;
-        ///    &lt;script src [rest of string was truncated]&quot;;.
+        ///    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js&quot;&gt;&lt;/script [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string index {
             get {

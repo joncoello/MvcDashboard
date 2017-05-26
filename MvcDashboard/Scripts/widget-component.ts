@@ -1,4 +1,5 @@
-﻿class WidgetComponenet {
+// main componenet to be wrapped around widget element
+class WidgetComponenet {
     
     constructor(public element: Element, public settings: WidgetSettings) {
         settings.loadData(element);
@@ -6,10 +7,13 @@
 
 }
 
+// widget settings including event callbacks
 class WidgetSettings {
     public loadData: (element: Element) => void;
 }
 
+// singleton for managing widgets on a page
+// widgets register themselves then can be centrally managed
 class WidgetManager {
 
     // singleton implementation

@@ -1,0 +1,12 @@
+{
+  "name": "widget2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+  },
+  "dependencies": {
+    "dashboardwidget": "1.0.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
