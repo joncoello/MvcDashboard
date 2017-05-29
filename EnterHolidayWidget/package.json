@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "ASP.NET",
+  "private": true,
+  "dependencies": {
+    "@types/daterangepicker": "^2.1.9",
+    "dashboardwidget": "^1.0.3",
+    "jquery": "3.2.1"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "@types/jquery": "^2.0.45"
+  }
+}
