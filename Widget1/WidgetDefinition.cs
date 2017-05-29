@@ -16,7 +16,7 @@ namespace Widget1
         public WidgetLayout Getlayout()
         {
             return new WidgetLayout() {
-                X = 4,
+                X = 3,
                 Y = 5,
                 Widh = 4,
                 Height = 5

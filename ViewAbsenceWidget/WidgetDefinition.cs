@@ -19,7 +19,7 @@ namespace ViewAbsenceWidget
             {
                 X = 0,
                 Y = 0,
-                Widh = 9,
+                Widh = 7,
                 Height = 3
             };
         }
