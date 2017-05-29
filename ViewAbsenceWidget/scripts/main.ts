@@ -1,5 +1,5 @@
 ﻿let widgetElement1: Element = document.getElementById('this');
-let widget1: WidgetComponenet = new WidgetComponenet(widgetElement1,
+let widget1: WidgetComponent = new WidgetComponent(widgetElement1,
     {
         loadData: getHolidayData
     }
