@@ -1,6 +1,6 @@
 var Chart;
 var widgetElement = document.getElementById('this');
-var widget = new WidgetComponenet(widgetElement, {
+var widget = new WidgetComponent(widgetElement, {
     loadData: function (e) {
         $('h3', e).text('Test 123');
         console.log(e);

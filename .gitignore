@@ -245,3 +245,5 @@ ModelManifest.xml
 /MvcDashboard/Scripts/main.js
 /Widget1/Scripts/widget-component.js
 /Widget1/Scripts/widget-component.ts
+/Widget2/Scripts/widget-component.ts
+/Widget2/Scripts/widget-component.js

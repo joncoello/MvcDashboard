@@ -2,7 +2,7 @@
 var Chart: any;
 
 var widgetElement: Element = document.getElementById('this');
-var widget: WidgetComponenet = new WidgetComponenet(widgetElement, {
+var widget: WidgetComponent = new WidgetComponent(widgetElement, {
     loadData: (e: Element) => {
 
         $('h3', e).text('Test 123');
