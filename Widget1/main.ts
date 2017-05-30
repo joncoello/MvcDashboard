@@ -54,7 +54,9 @@ var widget: WidgetComponent = new WidgetComponent(widgetElement, {
             }
         });
 
-    }
+    },
+    saveCustomisation: (customisation: { [id: string]: any }): void => { },
+    restoreCustomisation: (customisation: { [id: string]: any }): void => { }
 });
 
 WidgetManager.Instance.registerWidget(widget);

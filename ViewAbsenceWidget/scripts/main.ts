@@ -1,11 +1,24 @@
 ﻿let widgetElement1: Element = document.getElementById('this');
 let widget1: WidgetComponent = new WidgetComponent(widgetElement1,
     {
-        loadData: getHolidayData
+        loadData: getHolidayData,
+        saveCustomisation: (customisation: { [id: string]: any }): void => {
+
+            // save currently selected employee id
+            customisation['selectedEmployeeID'] = 27;
+
+        },
+        restoreCustomisation: (customisation: { [id: string]: any }): void => {
+
+            // get employee id from customisation or use default
+            let defaultEmployeeID = -1;
+            let employeeID = customisation['selectedEmployeeID'] === undefined ? defaultEmployeeID : <number>customisation['selectedEmployeeID'];
+
+        }
     }
 );
 
-function getHolidayData(e: Element) : void {
+function getHolidayData(e: Element): void {
     $.get('http://localhost:1187/api/holiday', function (data) {
 
         console.log(e);

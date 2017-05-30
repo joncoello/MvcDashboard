@@ -8,8 +8,12 @@ var widget = new WidgetComponent(widgetElement, {
             }
         });
         $('#this > button').click(function () {
-            $.post('http://localhost:1187/api/holiday', { dateRange: dateInput.val() });
+            $.post('http://localhost:1187/api/holiday', { dateRange: dateInput.val() }, function () {
+                WidgetManager.Instance.refreshWidgets();
+            });
         });
-    }
+    },
+    saveCustomisation: function (customisation) { },
+    restoreCustomisation: function (customisation) { }
 });
 WidgetManager.Instance.registerWidget(widget);

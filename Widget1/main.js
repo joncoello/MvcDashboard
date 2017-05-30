@@ -44,6 +44,8 @@ var widget = new WidgetComponent(widgetElement, {
                 }
             }
         });
-    }
+    },
+    saveCustomisation: function (customisation) { },
+    restoreCustomisation: function (customisation) { }
 });
 WidgetManager.Instance.registerWidget(widget);

@@ -65,7 +65,6 @@
     <Content Include="gulpfile.js" />
     <Content Include="package.json" />
     <None Include="scripts\main.js" />
-    <Content Include="script.js" />
     <Content Include="tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -135,6 +134,9 @@
   </ProjectExtensions>
   <PropertyGroup>
     <PostBuildEvent>copy /Y "$(TargetDir)$(ProjectName).dll" "$(SolutionDir)MvcDashboard\bin\$(ProjectName).dll"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>"C:\Program Files (x86)\Microsoft SDKs\TypeScript\2.1\tsc.exe"</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
