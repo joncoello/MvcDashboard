@@ -49,5 +49,10 @@ namespace EnterHolidayWidget
             styles.Add("<link href=\"//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css\" rel=\"stylesheet\" />");
             return styles;
         }
+
+        public bool HasAuthority()
+        {
+            return true;
+        }
     }
 }

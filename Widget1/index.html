@@ -2,20 +2,26 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
 </head>
 <body>
 
     <div style="width: 500px; height: 500px;">
 
         <!--bodystart-->
-        <canvas id="this"></canvas>
+        <div id="this" class="bar-chart-widget">
+            <h3>title</h3>
+            <canvas></canvas>
+        </div>
         <!--bodyend-->
 
     </div>
 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <!--<script src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>-->
+    <script src="Scripts/widget-component.js"></script>
+    <script src="main.js"></script>
 
 </body>
 </html>

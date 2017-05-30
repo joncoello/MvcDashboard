@@ -23,6 +23,12 @@
         @Model.PageTitle
     </h1>
 
+    <div>
+        <button id="refresh">refresh</button>
+        <button id="getLayout">get layout</button>
+        <button id="saveLayout">save layout</button>
+    </div>
+
     <!-- widgets -->
     <div class="grid-stack">
 
@@ -48,6 +54,8 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.3.0/gridstack.all.js"></script>
+    <script src="~/Scripts/widget-component.js"></script>
+    <script src="~/Scripts/main.js"></script>
 
     <!-- libraries-->
     @foreach (var scriptReference in Model.Widgets.SelectMany(w => w.ScriptReferences).Distinct())

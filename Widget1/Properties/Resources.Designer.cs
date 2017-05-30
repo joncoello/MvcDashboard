@@ -65,17 +65,23 @@ namespace Widget1.Properties {
         ///&lt;html&gt;
         ///&lt;head&gt;
         ///    &lt;title&gt;&lt;/title&gt;
-        ///	&lt;meta charset=&quot;utf-8&quot; /&gt;
+        ///    &lt;meta charset=&quot;utf-8&quot; /&gt;
         ///&lt;/head&gt;
         ///&lt;body&gt;
-        ///    &lt;!--body--&gt;
-        ///    &lt;h1&gt;
-        ///        Hello Widget 1
-        ///    &lt;/h1&gt;
-        ///    &lt;!--/body--&gt;
-        ///&lt;/body&gt;
-        ///&lt;/html&gt;
-        ///.
+        ///
+        ///    &lt;div style=&quot;width: 500px; height: 500px;&quot;&gt;
+        ///
+        ///        &lt;!--bodystart--&gt;
+        ///        &lt;div id=&quot;this&quot; class=&quot;bar-chart-widget&quot;&gt;
+        ///            &lt;h3&gt;title&lt;/h3&gt;
+        ///            &lt;canvas&gt;&lt;/canvas&gt;
+        ///        &lt;/div&gt;
+        ///        &lt;!--bodyend--&gt;
+        ///
+        ///    &lt;/div&gt;
+        ///
+        ///    &lt;script src=&quot;node_modules/jquery/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+        ///    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js&quot;&gt;&lt;/script [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string index {
             get {
@@ -84,24 +90,24 @@ namespace Widget1.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to (function () {
-        ///    var ctx = document.getElementById(&quot;this&quot;);
-        ///    var myChart = new Chart(ctx, {
-        ///        type: &apos;bar&apos;,
-        ///        data: {
-        ///            labels: [&quot;Red&quot;, &quot;Blue&quot;, &quot;Yellow&quot;, &quot;Green&quot;, &quot;Purple&quot;, &quot;Orange&quot;],
-        ///            datasets: [{
-        ///                label: &apos;# of Votes&apos;,
-        ///                data: [12, 19, 3, 5, 2, 3],
-        ///                backgroundColor: [
-        ///                    &apos;rgba(255, 99, 132, 0.2)&apos;,
-        ///                    &apos;rgba(54, 162, 235, 0.2)&apos;,
-        ///                    &apos;rgba(255, 206, 86, 0.2)&apos;,
-        ///        [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to var Chart;
+        ///var widgetElement = document.getElementById(&apos;this&apos;);
+        ///var widget = new WidgetComponenet(widgetElement, {
+        ///    loadData: function (e) {
+        ///        $(&apos;h3&apos;, e).text(&apos;Test 123&apos;);
+        ///        console.log(e);
+        ///        var canvas = e.getElementsByTagName(&apos;canvas&apos;).item(0);
+        ///        console.log(canvas);
+        ///        var ctx = canvas.getContext(&apos;2d&apos;);
+        ///        console.log(ctx);
+        ///        var myChart = new Chart(ctx, {
+        ///            type: &apos;bar&apos;,
+        ///            data: {
+        ///                labels: [&quot;Red&quot;, &quot;Blue&quot;, &quot;Yellow&quot;, [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string script {
+        internal static string main {
             get {
-                return ResourceManager.GetString("script", resourceCulture);
+                return ResourceManager.GetString("main", resourceCulture);
             }
         }
     }

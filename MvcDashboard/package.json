@@ -1,0 +1,12 @@
+{
+	"version": "1.0.0",
+	"name": "MvcDashboard",
+  "private": true,
+  "dependencies": {
+    "jquery": "3.2.1",
+    "dashboardwidget": "^1.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

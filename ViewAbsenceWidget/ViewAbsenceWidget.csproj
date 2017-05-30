@@ -62,7 +62,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="gulpfile.js" />
     <Content Include="package.json" />
+    <None Include="scripts\main.js" />
+    <Content Include="script.js" />
     <Content Include="tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -100,7 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="scripts\main.ts" />
-    <TypeScriptCompile Include="scripts\widget-component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

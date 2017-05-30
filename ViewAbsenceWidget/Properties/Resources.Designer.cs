@@ -76,14 +76,14 @@ namespace ViewAbsenceWidget.Properties {
         ///    &lt;div style=&quot;width: 600px;&quot;&gt;
         ///
         ///        &lt;!--bodystart--&gt;
-        ///        &lt;div id=&quot;myAbsence1&quot;&gt;&lt;/div&gt;
-        ///        &lt;div id=&quot;myAbsence2&quot;&gt;&lt;/div&gt;
+        ///        &lt;div id=&quot;this&quot; class=&quot;holiday-widget&quot;&gt;&lt;/div&gt;
         ///        &lt;!--bodyend--&gt;
         ///
         ///    &lt;/div&gt;
         ///
-        ///    &lt;script src=&quot;https://code.jquery.com/jquery-3.2.1.min.js&quot;&gt;&lt;/script&gt;
-        ///  [rest of string was truncated]&quot;;.
+        ///    &lt;button id=&quot;refreshHolidayButton&quot;&gt;refresh&lt;/button&gt;
+        ///
+        ///    &lt;script src=&quot;https://code.jquery [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string index {
             get {
@@ -92,11 +92,36 @@ namespace ViewAbsenceWidget.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to #myAbsence{
+        ///   Looks up a localized string similar to var widgetElement1 = document.getElementById(&apos;this&apos;);
+        ///var widget1 = new WidgetComponenet(widgetElement1, {
+        ///    loadData: getHolidayData
+        ///});
+        ///function getHolidayData(e) {
+        ///    $.get(&apos;http://localhost:1187/api/holiday&apos;, function (data) {
+        ///        console.log(e);
+        ///        $(e).empty();
+        ///        console.log(data);
+        ///        var year = 2017;
+        ///        var days = [
+        ///            &apos;M&apos;, &apos;T&apos;, &apos;W&apos;, &apos;T&apos;, &apos;F&apos;, &apos;S&apos;, &apos;S&apos;
+        ///        ];
+        ///        var months = [
+        ///            &apos;January&apos;, &apos;February&apos;, &apos;March&apos;, &apos;April&apos;, &apos;May&apos;, &apos;June [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string main {
+            get {
+                return ResourceManager.GetString("main", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .holiday-widget {
         ///    font-size: 0.7em;
         ///}
         ///
-        ///.table &gt; tbody &gt; tr &gt; td, .table &gt; tbody &gt; tr &gt; th, .table &gt; tfoot &gt; tr &gt; td, .table &gt; tfoot &gt; tr &gt; th, .table &gt; thead &gt; tr &gt; td, .table &gt; thead &gt; tr &gt; th {
+        ///.holiday-widget &gt; .table &gt; tbody &gt; tr &gt; td, .table &gt; tbody &gt; tr &gt; th,
+        ///.holiday-widget &gt; .table &gt; tfoot &gt; tr &gt; td, .table &gt; tfoot &gt; tr &gt; th, 
+        ///.holiday-widget &gt; .table &gt; thead &gt; tr &gt; td, .table &gt; thead &gt; tr &gt; th {
         ///    padding: 2px;
         ///    text-align: center;
         ///}
@@ -108,12 +133,15 @@ namespace ViewAbsenceWidget.Properties {
         ///.nonday {
         ///    background-color: lightgray;
         ///}
-        ///.holiday{
+        ///
+        ///.holiday {
         ///    background-color: paleturquoise;
         ///}
-        ///.daycol{
+        ///
+        ///.daycol {
         ///    min-width: 20px;
-        ///}.
+        ///}
+        ///.
         /// </summary>
         internal static string style {
             get {

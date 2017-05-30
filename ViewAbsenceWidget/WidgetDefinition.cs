@@ -19,14 +19,14 @@ namespace ViewAbsenceWidget
             {
                 X = 0,
                 Y = 0,
-                Widh = 9,
+                Widh = 7,
                 Height = 3
             };
         }
 
         public string GetScript()
         {
-            return "";
+            return ViewAbsenceWidget.Properties.Resources.main;
         }
 
         public List<string> GetScriptReferences()
@@ -43,6 +43,11 @@ namespace ViewAbsenceWidget
         public List<string> GetStyleReferences()
         {
             return new List<string>();
+        }
+
+        public bool HasAuthority()
+        {
+            return true;
         }
     }
 }

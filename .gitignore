@@ -243,3 +243,13 @@ ModelManifest.xml
 .fake/
 *.map
 /ViewAbsenceWidget/scripts/widget-component.js
+/MvcDashboard/Scripts/main.js
+/Widget1/Scripts/widget-component.js
+/Widget1/Scripts/widget-component.ts
+/Widget2/Scripts/widget-component.ts
+/Widget2/Scripts/widget-component.js
+/ViewAbsenceWidget/scripts/widget-component.ts
+/EnterHolidayWidget/Scripts/widget-component.ts
+/EnterHolidayWidget/Scripts/widget-component.js
+/MvcDashboard/Scripts/widget-component.ts
+/MvcDashboard/Scripts/widget-component.js

@@ -5,9 +5,11 @@
   "main": "index.js",
   "dependencies": {
     "@types/jquery": "^2.0.45",
-    "jquery": "3.2.1"
+    "jquery": "3.2.1",
+    "dashboardwidget": "^1.0.3"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
     "@types/jquery": "^2.0.45"
   },
   "scripts": {

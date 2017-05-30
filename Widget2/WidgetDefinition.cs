@@ -16,7 +16,7 @@ namespace Widget2
         public WidgetLayout Getlayout()
         {
             return new WidgetLayout() {
-                X = 9,
+                X = 7,
                 Y = 5,
                 Widh = 2,
                 Height = 5
@@ -48,6 +48,11 @@ namespace Widget2
             styles.Add("<link href=\"https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\" rel=\"stylesheet\" />");
             styles.Add("<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.min.css\" />");
             return styles;
+        }
+
+        public bool HasAuthority()
+        {
+            return true;
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Widget1
         public WidgetLayout Getlayout()
         {
             return new WidgetLayout() {
-                X = 4,
+                X = 3,
                 Y = 5,
                 Widh = 4,
                 Height = 5
@@ -25,7 +25,7 @@ namespace Widget1
 
         public string GetScript()
         {
-            return Widget1.Properties.Resources.script;
+            return Widget1.Properties.Resources.main;
         }
 
         public List<string> GetScriptReferences()
@@ -43,6 +43,11 @@ namespace Widget1
         public List<string> GetStyleReferences()
         {
             return new List<string>();
+        }
+
+        public bool HasAuthority()
+        {
+            return true;
         }
     }
 }
