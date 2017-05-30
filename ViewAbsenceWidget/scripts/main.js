@@ -1,8 +1,15 @@
 var widgetElement1 = document.getElementById('this');
 var widget1 = new WidgetComponent(widgetElement1, {
     loadData: getHolidayData,
-    saveCustomisation: function (customisation) { },
-    restoreCustomisation: function (customisation) { }
+    saveCustomisation: function (customisation) {
+        // save currently selected employee id
+        customisation['selectedEmployeeID'] = 27;
+    },
+    restoreCustomisation: function (customisation) {
+        // get employee id from customisation or use default
+        var defaultEmployeeID = -1;
+        var employeeID = customisation['selectedEmployeeID'] === undefined ? defaultEmployeeID : customisation['selectedEmployeeID'];
+    }
 });
 function getHolidayData(e) {
     $.get('http://localhost:1187/api/holiday', function (data) {
