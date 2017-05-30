@@ -1,6 +1,8 @@
 var widgetElement1 = document.getElementById('this');
 var widget1 = new WidgetComponent(widgetElement1, {
-    loadData: getHolidayData
+    loadData: getHolidayData,
+    saveCustomisation: function (customisation) { },
+    restoreCustomisation: function (customisation) { }
 });
 function getHolidayData(e) {
     $.get('http://localhost:1187/api/holiday', function (data) {

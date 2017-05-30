@@ -11,10 +11,14 @@ var widget: WidgetComponent = new WidgetComponent(widgetElement, {
         });
 
         $('#this > button').click(function () {
-            $.post('http://localhost:1187/api/holiday', { dateRange: dateInput.val() })
+            $.post('http://localhost:1187/api/holiday', { dateRange: dateInput.val() }, () => {
+                WidgetManager.Instance.refreshWidgets();
+            })
         });
 
-    }
+    }, 
+    saveCustomisation: (customisation: { [id: string]: any }): void => {},
+    restoreCustomisation: (customisation: { [id: string]: any }): void =>{}
 });
 
 WidgetManager.Instance.registerWidget(widget);

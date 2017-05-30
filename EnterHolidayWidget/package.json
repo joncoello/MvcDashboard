@@ -2,6 +2,9 @@
   "version": "1.0.0",
   "name": "ASP.NET",
   "private": true,
+  "scripts": {
+    "tsc": "tsc"
+  },
   "dependencies": {
     "@types/daterangepicker": "^2.1.9",
     "dashboardwidget": "^1.0.3",

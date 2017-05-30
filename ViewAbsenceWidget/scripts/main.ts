@@ -1,7 +1,9 @@
 ﻿let widgetElement1: Element = document.getElementById('this');
 let widget1: WidgetComponent = new WidgetComponent(widgetElement1,
     {
-        loadData: getHolidayData
+        loadData: getHolidayData,
+        saveCustomisation: (customisation: { [id: string]: any }): void => { },
+        restoreCustomisation: (customisation: { [id: string]: any }): void => { }
     }
 );
 
