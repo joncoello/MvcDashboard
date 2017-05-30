@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcDashboard", "MvcDashboard\MvcDashboard.csproj", "{15729BD8-B380-4FD4-ABAD-DD33B2BDE429}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -22,6 +22,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Absence.API", "Absence.API\Absence.API.csproj", "{6C3D57D8-55D0-4AB8-B75F-B71CA12CDAF5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewAbsenceWidget", "ViewAbsenceWidget\ViewAbsenceWidget.csproj", "{DBA12A7E-9E2E-45E5-8A64-813B383AC481}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardWidget1", "DashboardWidget1\DashboardWidget1.csproj", "{9390C008-B397-485C-9491-239A689B7AF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{DBA12A7E-9E2E-45E5-8A64-813B383AC481}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBA12A7E-9E2E-45E5-8A64-813B383AC481}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBA12A7E-9E2E-45E5-8A64-813B383AC481}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9390C008-B397-485C-9491-239A689B7AF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9390C008-B397-485C-9491-239A689B7AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9390C008-B397-485C-9491-239A689B7AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9390C008-B397-485C-9491-239A689B7AF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,5 +71,6 @@ Global
 		{E44E021C-7EEF-4247-956C-58A5602792E7} = {54BD7399-9006-49B0-894A-52649B85768E}
 		{6C3D57D8-55D0-4AB8-B75F-B71CA12CDAF5} = {54BD7399-9006-49B0-894A-52649B85768E}
 		{DBA12A7E-9E2E-45E5-8A64-813B383AC481} = {54BD7399-9006-49B0-894A-52649B85768E}
+		{9390C008-B397-485C-9491-239A689B7AF6} = {A776E9E0-8523-4C18-A09B-67A9F4B4AC37}
 	EndGlobalSection
 EndGlobal

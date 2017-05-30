@@ -50,7 +50,17 @@ namespace MvcDashboard.Models
             }
         }
 
-        public string Style { get; set; }
+        private string _style;
+        public string Style {
+            get
+            {
+                return _style;
+            }
+            set
+            {
+                _style = ReplaceThisWithID(value);
+            }
+        }
 
         public List<string> ScriptReferences { get; set; }
 
